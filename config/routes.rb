@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'garments/' => 'garments#show', as: :garment
   get 'garments/:id/edit' => 'garments#edit', as: :edit_garment
   post 'garments/' => 'garments#create'
-  update 'garments/:id' => 'garments#update'
+  patch 'garments/:id' => 'garments#update'
   delete 'garments/:id' => 'garments#destroy'
 
 
